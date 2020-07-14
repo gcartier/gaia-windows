@@ -1,0 +1,4 @@
+(module jazz.opengl.sample.syntax jazz
+  (import (scheme.syntax-rules (phase syntax)))
+  (class Vertex extends F64Vector)
+  (class Matrix extends F64Vector))

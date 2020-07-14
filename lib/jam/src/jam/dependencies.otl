@@ -1,0 +1,4 @@
+(module jam.dependencies jazz
+  (import (jam))
+  (import (jazz.runtime))
+  (definition package (jam-dependencies arguments)))

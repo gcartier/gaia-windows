@@ -1,0 +1,4 @@
+(module srfi-26 scheme
+  (import (scheme.syntax-rules (phase syntax)))
+  (syntax public cut)
+  (syntax public cute))

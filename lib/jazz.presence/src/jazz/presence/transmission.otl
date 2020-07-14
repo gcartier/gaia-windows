@@ -1,0 +1,16 @@
+(module jazz.presence.transmission jazz
+  (import (jazz.version))
+  (class Connection-Broke extends Exception
+    (slot reason getter generate)
+    (method override (initialize self rs))
+    (method override (print self printer readably))
+    (method override (present-exception self)))
+  (hub get-reason)
+  (definition public (throw-connection-broke reason))
+  (definition public (connection-exception? exc))
+  (definition protected *presence-code*)
+  (definition protected *presence-version*)
+  (definition public (write-port port code version info))
+  (definition public (read-port port expected-code expected-version))
+  (definition public (validate-code expected-code code))
+  (definition public (validate-version expected-version version)))

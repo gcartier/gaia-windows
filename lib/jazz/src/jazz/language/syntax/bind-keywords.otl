@@ -1,0 +1,4 @@
+(module jazz.language.syntax.bind-keywords scheme
+  (import (gambit (only string->keyword)))
+  (import (jazz.language.runtime.kernel))
+  (syntax public bind-keywords))

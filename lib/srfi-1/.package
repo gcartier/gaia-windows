@@ -1,0 +1,10 @@
+(package srfi-1
+  
+  (title "SRFI-1")
+  (description "List Library")
+  (authors "Olin Shivers")
+  (stage release)
+  (root "src")
+  (products (srfi-1 (update srfi-1)
+                    (dependencies scheme)))
+  (project ".project"))

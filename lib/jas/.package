@@ -1,0 +1,16 @@
+(package jas
+  
+  (title "JAS")
+  (description "Jazz Associative Storage")
+  (authors "Guillaume Cartier")
+  (stage experimental)
+  (root "src")
+  (products (jas (run jas.run)
+                 (build (jas executable: "jas"))
+                 (update jas
+                         jas.run)
+                 (dependencies scheme.core
+                               jazz
+                               jazz.associative
+                               jazz.runtime)))
+  (project ".project"))

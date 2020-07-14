@@ -1,0 +1,10 @@
+(module jazz.debugger.jazz.autoload jazz
+  (export (jazz.debugger.jazz.Jazz-Debugger (autoload Jazz-Debugger Jazz-Debugger)))
+  (export (jazz.debugger.jazz.Jazz-Project (autoload Jazz-Project Jazz-Project)))
+  (export (jazz.debugger.jazz.Snapshot-Debugger (autoload Snapshot-Debugger Snapshot-Debugger)))
+  (export (jazz.debugger.jazz.Swank-Debugger (autoload Swank-Debugger Swank-Debugger)))
+  (export (jazz.debugger.jazz.Swank-Process (autoload Swank-Process Swank-Process)))
+  (export (jazz.debugger.jazz.Swank-Restart (autoload Swank-Restart Swank-Restart)))
+  (export (jazz.debugger.jazz.Swank-Snooper (autoload Swank-Snooper Swank-Snooper)))
+  (export (jazz.debugger.jazz.Swank-Stop (autoload Swank-Stop Swank-Stop)))
+  (export (jazz.debugger.jazz.Swank-Thread (autoload Swank-Thread Swank-Thread))))

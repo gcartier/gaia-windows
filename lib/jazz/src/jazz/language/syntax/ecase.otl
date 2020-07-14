@@ -1,0 +1,4 @@
+(module jazz.language.syntax.ecase scheme
+  (import (jazz.language.runtime.kernel))
+  (syntax public ecase)
+  (syntax public nucase))

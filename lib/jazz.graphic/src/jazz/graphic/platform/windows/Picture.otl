@@ -1,0 +1,3 @@
+(module jazz.graphic.platform.windows.Picture jazz
+  (import (jazz.graphic))
+  (class Picture extends Surface))

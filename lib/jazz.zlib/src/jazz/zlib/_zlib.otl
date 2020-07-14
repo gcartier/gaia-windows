@@ -1,0 +1,10 @@
+(module jazz.zlib jazz
+  (export (jazz.zlib.foreign))
+  (import (jazz.zlib.foreign))
+  (definition public (zlib-deflate in (level: level (unspecified)) (gzip?: gzip? (unspecified)) (chunk: chunk (unspecified))))
+  (definition public (zlib-inflate in (gzip?: gzip? (unspecified)) (chunk: chunk (unspecified))))
+  (definition public (zlib-inflate! out in (gzip?: gzip? (unspecified))))
+  (definition public (write-deflated-content data port (encoder (unspecified))))
+  (definition public (read-deflated-content port (decoder (unspecified))))
+  (definition public (write-deflated data port))
+  (definition public (read-deflated port)))

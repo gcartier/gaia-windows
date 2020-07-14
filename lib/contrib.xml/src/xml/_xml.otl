@@ -1,0 +1,2 @@
+(module xml scheme
+  (native xml-string->sxml))

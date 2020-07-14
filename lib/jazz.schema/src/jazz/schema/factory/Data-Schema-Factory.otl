@@ -1,0 +1,12 @@
+(module jazz.schema.factory.Data-Schema-Factory jazz
+  (import (jazz.entity))
+  (import (jazz.resource))
+  (import (jazz.schema))
+  (class Data-Schema-Factory extends Entity-Factory
+    (method override (get-class self))
+    (method override (get-name-prohibited? self))
+    (method override (get-name-mandatory? self))
+    (method override (get-name-unicity? self))
+    (method override (presentation->name self presentation))
+    (method override (get-factory-presentation self))
+    (method override (get-factory-image self))))

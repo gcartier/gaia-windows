@@ -1,0 +1,2 @@
+(module jazz.database.inventory.Inventory-Updater jazz
+  (class Inventory-Updater extends Object))

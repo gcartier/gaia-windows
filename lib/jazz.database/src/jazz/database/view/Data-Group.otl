@@ -1,0 +1,3 @@
+(module jazz.database.view.Data-Group jazz
+  (import (jazz.component))
+  (class Data-Group extends Group))

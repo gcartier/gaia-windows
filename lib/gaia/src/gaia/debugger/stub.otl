@@ -1,0 +1,27 @@
+(module gaia.debugger.stub jazz
+  (import (jazz.presence.syntax (phase syntax)))
+  (import (jazz.presence))
+  (class Gaia-Debugger-Stub-Interface extends Stub-Interface
+    (method override (local-class self))
+    (method override (remote-class self)))
+  (interface Gaia-Debugger-Stub metaclass Gaia-Debugger-Stub-Interface extends Remotable-Stub
+    (method public virtual abstract (show-properties self __self __debuggee __class __properties))
+    (method public virtual abstract (live-gaia/world self __self __debuggee))
+    (method public virtual abstract (design-gaia/world self __self __debuggee))
+    (method public virtual abstract (restore-gaia/world self __self __debuggee)))
+  (hub show-properties)
+  (hub live-gaia/world)
+  (hub design-gaia/world)
+  (hub restore-gaia/world)
+  (class Gaia-Debugger-Local-Proxy extends Local-Proxy implements Gaia-Debugger-Stub
+    (method override (stub-reference self))
+    (method override (show-properties self __self __debuggee __class __properties))
+    (method override (live-gaia/world self __self __debuggee))
+    (method override (design-gaia/world self __self __debuggee))
+    (method override (restore-gaia/world self __self __debuggee)))
+  (class Gaia-Debugger-Remote-Proxy extends Remote-Proxy implements Gaia-Debugger-Stub
+    (method override (stub-reference self))
+    (method override (show-properties self __self __debuggee __class __properties))
+    (method override (live-gaia/world self __self __debuggee))
+    (method override (design-gaia/world self __self __debuggee))
+    (method override (restore-gaia/world self __self __debuggee))))

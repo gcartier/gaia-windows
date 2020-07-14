@@ -1,0 +1,18 @@
+(module jazz.database.inventory.Inventory-Primary-Key jazz
+  (import (jazz.database))
+  (class Inventory-Primary-Key extends Object
+    (slot inventory getter generate)
+    (slot parent getter generate)
+    (method override (initialize self inventory parent))
+    (method public virtual (get-title self))
+    (method public virtual (get-fields self))
+    (method public virtual (get-fields/orders self))
+    (method public virtual (get-clustered? self))
+    (method public virtual (get-fill-factor self)))
+  (hub get-inventory)
+  (hub get-parent)
+  (hub get-title)
+  (hub get-fields)
+  (hub get-fields/orders)
+  (hub get-clustered?)
+  (hub get-fill-factor))

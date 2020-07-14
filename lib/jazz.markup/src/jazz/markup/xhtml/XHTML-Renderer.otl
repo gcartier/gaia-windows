@@ -1,0 +1,12 @@
+(module jazz.markup.xhtml.XHTML-Renderer jazz
+  (import (jazz.markup))
+  (class XHTML-Renderer extends Markup-Renderer
+    (method override (render self markup output))
+    (method (render-markup self context markup simple? mix? inside-pre? level output))
+    (method virtual (render-text self context markup output))
+    (method override (render-node self context markup simple? mix? inside-pre? level output))
+    (method (render-tag self context markup tag simple? parent-mix? inside-pre? level output))
+    (method virtual (render-string self context output property value))
+    (method virtual (render-value self context output property value))
+    (method (render-children self context markup simple? mix? inside-pre? level output))
+    (method (output-text self context output format-string . parameters))))

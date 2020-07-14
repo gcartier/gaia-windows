@@ -1,0 +1,10 @@
+(module jazz.database.designer.Datatype-Row jazz
+  (import (jazz.designer))
+  (import (jazz.designer.ui))
+  (import (jazz.text))
+  (class Datatype-Row extends Combo-Row)
+  (class Datatype-Row-Editor extends Combo-Row-Editor
+    (method override (content-change self origin))
+    (method override (combo-choice self))
+    (method override (get-entry self))
+    (method override (set-entry self entry))))

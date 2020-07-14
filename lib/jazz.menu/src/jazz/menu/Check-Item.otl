@@ -1,0 +1,12 @@
+(module jazz.menu.Check-Item jazz
+  (import (jazz.application))
+  (import (jazz.menu))
+  (import (jazz.resource))
+  (import (jazz.ui))
+  (class Check-Item extends Label-Item
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (property checked? accessors explicit)
+    (method override (preferred-prefix-width self))
+    (method override (draw-prefix self surface context)))
+  (hub get-checked?)
+  (hub set-checked?))

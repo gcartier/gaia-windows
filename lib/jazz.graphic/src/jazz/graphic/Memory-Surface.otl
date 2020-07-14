@@ -1,0 +1,8 @@
+(module jazz.graphic.Memory-Surface jazz
+  (import (jazz.cairo))
+  (import (jazz.graphic))
+  (import (jazz.screen))
+  (class Memory-Surface extends Surface
+    (method override (initialize self compatibility size (retina?: retina? (unspecified))))
+    (method package (renew-context self)))
+  (hub renew-context))

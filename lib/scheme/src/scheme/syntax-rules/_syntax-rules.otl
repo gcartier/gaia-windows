@@ -1,0 +1,2 @@
+(module scheme.syntax-rules scheme
+  (syntax public syntax-rules))

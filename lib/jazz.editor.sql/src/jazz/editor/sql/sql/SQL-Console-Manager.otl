@@ -1,0 +1,5 @@
+(module jazz.editor.sql.sql.SQL-Console-Manager jazz
+  (import (jazz.console))
+  (class SQL-Console-Manager extends Console-Manager
+    (method meta override (external-name self . rest))
+    (method meta override (host-title self))))

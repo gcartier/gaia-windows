@@ -1,0 +1,3 @@
+(module jazz.benchmark jazz
+  (import (jazz.benchmark.catalog))
+  (import (jazz.io)))

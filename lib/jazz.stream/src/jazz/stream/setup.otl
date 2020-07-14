@@ -1,0 +1,3 @@
+(module jazz.stream.setup jazz
+  (import (jazz.syntax (phase syntax)))
+  (definition public (setup-gstreamer)))

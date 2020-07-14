@@ -1,0 +1,4 @@
+(module jazz.markup.xhtml.XHTML-Parser jazz
+  (import (jazz.markup))
+  (class XHTML-Parser extends Markup-Parser
+    (method override (tag-valid? self tag))))

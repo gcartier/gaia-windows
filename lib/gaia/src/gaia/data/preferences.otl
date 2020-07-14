@@ -1,0 +1,6 @@
+(module gaia.data.preferences jazz
+  (export (gaia))
+  (export (jazz.application))
+  (export (jazz.component))
+  (export (jazz.groupware))
+  (export (jazz.ui)))

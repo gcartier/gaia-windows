@@ -1,0 +1,11 @@
+(module jazz.database.view.Data-Source-Widget jazz
+  (import (jazz.ui))
+  (class Data-Source-Widget extends Layout-View
+    (method public virtual (get-data-source self))
+    (method public virtual (set-data-source self source))
+    (method public virtual (setup-username/password-mode self))
+    (method public virtual (set-default-focus self)))
+  (hub get-data-source)
+  (hub set-data-source)
+  (hub setup-username/password-mode)
+  (hub set-default-focus))

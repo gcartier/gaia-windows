@@ -1,0 +1,2 @@
+(module jazz.ide.data.skins jazz
+  (export (jazz.ui)))

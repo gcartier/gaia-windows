@@ -1,0 +1,8 @@
+(module jazz.listener.foreign jazz
+  (import (jazz.foreign))
+  (import (jazz.platform.types))
+  (definition public listener_fifo_open)
+  (definition public listener_socket_open)
+  (definition public listener_reset)
+  (definition public listener_stop)
+  (definition public listener_close))

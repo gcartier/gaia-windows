@@ -1,0 +1,8 @@
+(module scheme.syntax scheme
+  (import (scheme.core.kernel))
+  (import (scheme.syntax-rules (phase syntax)))
+  (syntax public declaration-unit)
+  (syntax public declaration-path)
+  (syntax public declaration-locator)
+  (syntax public optional)
+  (syntax public let-optionals*))

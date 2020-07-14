@@ -1,0 +1,9 @@
+(module jazz.editor.java.text.Java-Explorer jazz
+  (import (jazz.editor))
+  (class Java-Explorer extends Code-Explorer
+    (method public (forward-comments self))
+    (method public (forward-whites self))
+    (method public (forward-identifier-or-number self)))
+  (hub forward-comments)
+  (hub forward-whites)
+  (hub forward-identifier-or-number))

@@ -1,0 +1,2 @@
+(module jazz.platform.syntax jazz
+  (macro public (platform-external signature . rest)))

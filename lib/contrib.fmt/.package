@@ -1,0 +1,19 @@
+(package contrib.fmt
+  
+  (title "FMT")
+  (description "Combinator Formatting")
+  (authors "Alex Shinn")
+  (stage release)
+  (root "src")
+  (products (contrib.fmt (alias fmt)
+                         (update fmt
+                                 fmt.fmt-c
+                                 fmt.fmt-js
+                                 fmt.let-optionals
+                                 fmt.mantissa
+                                 fmt.string-ports)
+                         (dependencies scheme
+                                       srfi-1
+                                       srfi-13
+                                       srfi-69)))
+  (project ".project"))

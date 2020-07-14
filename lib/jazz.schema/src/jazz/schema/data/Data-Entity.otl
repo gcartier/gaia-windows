@@ -1,0 +1,14 @@
+(module jazz.schema.data.Data-Entity jazz
+  (import (jazz.schema))
+  (class Data-Entity extends Data-Object
+    (slot owner getter generate)
+    (method override (initialize self . rest))
+    (method public virtual (get-children self))
+    (method public virtual (get-categorized-children self))
+    (method public virtual (create self kind name))
+    (method public virtual (add self kind object)))
+  (hub get-owner)
+  (hub get-children)
+  (hub get-categorized-children)
+  (hub create)
+  (hub add))

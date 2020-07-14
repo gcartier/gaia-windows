@@ -1,0 +1,5 @@
+(module gaia.debugger jazz
+  (import (jazz.presence))
+  (import (gaia.debugger.implementation))
+  (import (gaia.debugger.stub))
+  (definition public (make-gaia-debugger)))

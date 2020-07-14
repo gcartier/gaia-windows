@@ -1,0 +1,4 @@
+(module jazz.sample.c4.graphics jazz
+  (import (jazz.feedback))
+  (import (jazz.io))
+  (import (jazz.sample.gameserver.imagemagick)))

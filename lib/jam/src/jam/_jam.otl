@@ -1,0 +1,9 @@
+(module jam jazz
+  (import (jazz.core))
+  (import (jazz.runtime))
+  (definition package (mode-argument arguments))
+  (definition package (port-argument arguments))
+  (definition package (product-argument arguments))
+  (definition package (product-description package product))
+  (definition package (iterate-binding-references module-declaration proc))
+  (definition package (marshall-locat locat)))

@@ -1,0 +1,9 @@
+(module jazz.debuggee.view jazz
+  (export (jazz.debuggee.view.autoload))
+  (import (jazz.debuggee.view.autoload))
+  (import (jazz.application))
+  (import (jazz.component))
+  (import (jazz.workspace))
+  (definition public (current-view-debugger))
+  (definition public (edit-object object))
+  (definition public (reprint class/component)))

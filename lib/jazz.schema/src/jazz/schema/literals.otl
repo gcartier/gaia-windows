@@ -1,0 +1,13 @@
+(module jazz.schema.literals jazz
+  (import (jazz.schema))
+  (definition package (construct-datatype name size (precision (unspecified)) (scale (unspecified))))
+  (definition package (construct-data-schema properties tables views relations procedures))
+  (definition package (construct-data-table name properties primary-key columns indexes triggers constraints))
+  (definition package (construct-data-column name properties))
+  (definition package (construct-data-primary-key name properties))
+  (definition package (construct-data-index name properties))
+  (definition package (construct-data-constraint name properties))
+  (definition package (construct-data-procedure name properties))
+  (definition package (construct-data-relation name properties))
+  (definition package (construct-data-trigger name properties))
+  (definition package (construct-data-view name properties)))

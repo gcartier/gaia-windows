@@ -1,0 +1,3 @@
+(module gaia.product jazz
+  (import (jazz.io))
+  (import (jazz.product)))

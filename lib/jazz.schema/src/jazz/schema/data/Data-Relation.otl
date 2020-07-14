@@ -1,0 +1,18 @@
+(module jazz.schema.data.Data-Relation jazz
+  (import (jazz.schema))
+  (class Data-Relation extends Data-Entity
+    (slot primary-table getter generate)
+    (slot primary-columns getter generate)
+    (slot foreign-table getter generate)
+    (slot foreign-columns getter generate)
+    (method override (initialize self . rest))
+    (method package (print-schema self output))
+    (method override (get-kind self))
+    (method override (property-names self))
+    (method override (get-property self keyword . rest))
+    (method override (set-property self keyword value)))
+  (hub get-primary-table)
+  (hub get-primary-columns)
+  (hub get-foreign-table)
+  (hub get-foreign-columns)
+  (hub print-schema))

@@ -1,0 +1,11 @@
+(package jazz.effect
+  
+  (title "Effect")
+  (description "Effects")
+  (authors "Guillaume Cartier")
+  (stage experimental)
+  (root "src")
+  (products (jazz.effect (alias effect)
+                         (update jazz.effect)
+                         (dependencies jazz)))
+  (project ".project"))

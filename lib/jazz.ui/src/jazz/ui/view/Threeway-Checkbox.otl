@@ -1,0 +1,15 @@
+(module jazz.ui.view.Threeway-Checkbox jazz
+  (import (jazz.graphic))
+  (import (jazz.ui))
+  (class Threeway-Checkbox extends Check-Box
+    (property type accessors explicit)
+    (property property_ accessors none)
+    (property state accessors explicit)
+    (method override (change-state self reverse?))
+    (method override (draw-check self surface h v grayed?)))
+  (hub get-type)
+  (hub set-type)
+  (hub get-property)
+  (hub set-property)
+  (hub get-state)
+  (hub set-state))

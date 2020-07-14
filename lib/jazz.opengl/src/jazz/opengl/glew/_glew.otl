@@ -1,0 +1,7 @@
+(module jazz.opengl.glew jazz
+  (export (jazz.opengl.glew.foreign))
+  (export (jazz.opengl.glew.windows))
+  (import (jazz.opengl.glew.foreign))
+  (import (jazz.graphic))
+  (definition public (gl-check-error (tag (unspecified))))
+  (definition public (gl-colorize color)))

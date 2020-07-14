@@ -1,0 +1,6 @@
+(module jazz.crash.windows jazz
+  (import (jazz.foreign))
+  (import (jazz.platform.types))
+  (import (jazz.platform.windows.Types))
+  (import (jazz.snapshot))
+  (definition package (setup-crash-handler log?)))

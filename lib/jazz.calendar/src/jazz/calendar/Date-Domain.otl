@@ -1,0 +1,10 @@
+(module jazz.calendar.Date-Domain jazz
+  (import (jazz.calendar))
+  (import (jazz.domain))
+  (import (jazz.locale))
+  (import (jazz.time))
+  (class Date-Domain extends Domain
+    (method override (validate-value self value (validation-context (unspecified))))
+    (method override (present-value self value))
+    (method override (parse-presentation self text))
+    (method override (setup-entry self view client))))

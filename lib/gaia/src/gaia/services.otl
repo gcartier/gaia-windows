@@ -1,0 +1,2 @@
+(module gaia.services jazz
+  (import (jazz.project)))

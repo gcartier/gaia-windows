@@ -1,0 +1,17 @@
+(module jazz.graphic.platform.windows.Region jazz
+  (import (jazz.graphic))
+  (import (jazz.platform))
+  (class Region extends Base-Region
+    (slot handle getter generate)
+    (method override (initialize self (handle: handle (unspecified)) (rect: rect (unspecified))))
+    (method override (destroy self))
+    (method override (offset! self h v))
+    (method override (combine-and! self region))
+    (method override (combine-or! self region))
+    (method override (combine-xor! self region))
+    (method override (combine-diff! self region))
+    (method override (empty! self))
+    (method override (empty? self) <bool>)
+    (method override (intersects-rect? self rect) <bool>)
+    (method override (get-box self) <Rect>))
+  (hub get-handle))

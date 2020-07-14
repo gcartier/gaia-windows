@@ -1,0 +1,5 @@
+(module jazz.language.syntax.tie jazz.dialect
+  (import (jazz.language.runtime.kernel))
+  (import (jazz.language.runtime.format))
+  (import (jazz.language.runtime.functional))
+  (macro public (tie . objects)))

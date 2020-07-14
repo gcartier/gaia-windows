@@ -1,0 +1,10 @@
+(module jazz.schema.data.Data-Row jazz
+  (import (jazz.schema))
+  (class Data-Row extends Data-Container
+    (slot values)
+    (method override (initialize self table state values))
+    (method override (print self output readably))
+    (method override (get-values self))
+    (method override (get self name/rank))
+    (method public (set self name value)))
+  (hub set))

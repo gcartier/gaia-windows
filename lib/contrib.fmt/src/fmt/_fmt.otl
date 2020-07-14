@@ -1,0 +1,8 @@
+(module fmt gambit:
+  (import (gambit (except break call-with-output-string error)))
+  (import (fmt.let-optionals (phase syntax)))
+  (import (fmt.mantissa))
+  (import (fmt.string-ports))
+  (import (srfi-1))
+  (import (srfi-13))
+  (import (srfi-69)))

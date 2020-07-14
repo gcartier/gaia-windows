@@ -1,0 +1,10 @@
+(module jazz.graphic.Image-Surface jazz
+  (import (jazz.cairo))
+  (import (jazz.graphic))
+  (import (jazz.screen))
+  (class Image-Surface extends Surface
+    (method override (initialize self size (retina?: retina? (unspecified))))
+    (method package (renew-context self))
+    (method public (get-size self)))
+  (hub renew-context)
+  (hub get-size))

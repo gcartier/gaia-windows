@@ -1,0 +1,12 @@
+(package jazz.optimize
+  
+  (title "Optimize")
+  (description "Optimize to C code")
+  (authors "Guillaume Cartier")
+  (stage experimental)
+  (root "src")
+  (products (jazz.optimize (alias optimize)
+                           (run jazz.optimize.test.run)
+                           (update jazz.optimize)
+                           (dependencies fmt jazz)))
+  (project ".project"))

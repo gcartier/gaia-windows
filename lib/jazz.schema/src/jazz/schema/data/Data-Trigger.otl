@@ -1,0 +1,7 @@
+(module jazz.schema.data.Data-Trigger jazz
+  (import (jazz.schema))
+  (class Data-Trigger extends Data-Object
+    (method package (print-schema self output))
+    (method override (get-kind self))
+    (method override (property-names self)))
+  (hub print-schema))

@@ -1,0 +1,8 @@
+(module gaia.validate jazz
+  (export (gaia.validate.autoload))
+  (import (gaia.validate.autoload))
+  (import (jazz.io))
+  (import (jazz.log))
+  (import (jazz.validation))
+  (definition public Gaia-Suite)
+  (definition public (validate-gaia)))

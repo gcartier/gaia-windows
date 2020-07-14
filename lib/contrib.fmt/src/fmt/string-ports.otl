@@ -1,0 +1,2 @@
+(module fmt.string-ports gambit:
+  (import (gambit (except call-with-output-string))))

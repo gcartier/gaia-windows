@@ -1,0 +1,7 @@
+(module jazz.schema.data.Data-Sources jazz
+  (import (jazz.component))
+  (class Data-Sources extends Group
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (property default-source accessors generate))
+  (hub get-default-source)
+  (hub set-default-source))

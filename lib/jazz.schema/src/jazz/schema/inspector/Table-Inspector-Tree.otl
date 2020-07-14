@@ -1,0 +1,3 @@
+(module jazz.schema.inspector.Table-Inspector-Tree jazz
+  (import (jazz.tree))
+  (class Table-Inspector-Tree extends Tree-View))

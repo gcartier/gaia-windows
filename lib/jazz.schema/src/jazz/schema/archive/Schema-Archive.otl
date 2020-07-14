@@ -1,0 +1,3 @@
+(module jazz.schema.archive.Schema-Archive jazz
+  (import (jazz.entity))
+  (class Schema-Archive extends Object implements Entity-Interface))

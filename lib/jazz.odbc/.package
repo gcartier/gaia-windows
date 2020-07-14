@@ -1,0 +1,16 @@
+(package jazz.odbc
+  
+  (title "ODBC")
+  (description "Interface to ODBC Open Database Connectivity")
+  (authors "Jeremie Lasalle Ratelle" "Guillaume Cartier")
+  (stage beta)
+  (root "src")
+  (install jazz.odbc.install)
+  (products (jazz.odbc (alias odbc)
+                       (product jazz.odbc.product)
+                       (update jazz.odbc
+                               jazz.odbc.install
+                               jazz.odbc.odbc-lowlevel
+                               jazz.odbc.product)
+                       (dependencies jazz)))
+  (project ".project"))

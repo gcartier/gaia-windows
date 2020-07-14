@@ -1,0 +1,9 @@
+(module jazz.debugger.jazz.Swank-Restart jazz
+  (class Swank-Restart extends Object
+    (slot title getter generate)
+    (slot message getter generate)
+    (slot rank getter generate)
+    (method override (initialize self title message rank)))
+  (hub get-title)
+  (hub get-message)
+  (hub get-rank))

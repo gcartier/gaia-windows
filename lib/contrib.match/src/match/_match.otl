@@ -1,0 +1,9 @@
+(module match jazz
+  (import (scheme.syntax-rules))
+  (syntax public match)
+  (syntax public match-lambda)
+  (syntax public match-lambda*)
+  (syntax public match-let)
+  (syntax public match-letrec)
+  (syntax public match-named-let)
+  (syntax public match-let*))

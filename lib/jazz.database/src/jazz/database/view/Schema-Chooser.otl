@@ -1,0 +1,3 @@
+(module jazz.database.view.Schema-Chooser jazz
+  (import (jazz.ui))
+  (class Schema-Chooser extends Chooser))

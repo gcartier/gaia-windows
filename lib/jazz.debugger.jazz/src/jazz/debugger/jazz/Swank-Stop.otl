@@ -1,0 +1,15 @@
+(module jazz.debugger.jazz.Swank-Stop jazz
+  (class Swank-Stop extends Object
+    (slot thread getter generate)
+    (slot id getter generate)
+    (slot level getter generate)
+    (slot condition getter generate)
+    (slot restarts getter generate)
+    (slot frames getter generate)
+    (method override (initialize self thread id level condition restarts frames)))
+  (hub get-thread)
+  (hub get-id)
+  (hub get-level)
+  (hub get-condition)
+  (hub get-restarts)
+  (hub get-frames))

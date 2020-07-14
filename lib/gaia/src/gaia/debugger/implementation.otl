@@ -1,0 +1,12 @@
+(module gaia.debugger.implementation jazz
+  (import (jazz.application))
+  (import (jazz.event))
+  (class Gaia-Debugger extends Object
+    (method public (show-properties self debuggee class properties))
+    (method public (live-gaia/world self debuggee))
+    (method public (design-gaia/world self debuggee))
+    (method public (restore-gaia/world self debuggee)))
+  (hub show-properties)
+  (hub live-gaia/world)
+  (hub design-gaia/world)
+  (hub restore-gaia/world))

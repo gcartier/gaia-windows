@@ -1,0 +1,2 @@
+(module gaia.validate.autoload jazz
+  (export (gaia.validate.Gaia-Tester (autoload Gaia-Tester Gaia-Tester))))

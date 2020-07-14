@@ -1,0 +1,2 @@
+(module jazz.editor.sql.inventory.Inventory-Browser jazz
+  (class Inventory-Browser extends Object))

@@ -1,0 +1,14 @@
+(module jazz.editor.Code-Explorer jazz
+  (import (jazz.text))
+  (class Code-Explorer extends Text-Explorer
+    (method public virtual (backward-expr self))
+    (method public virtual (forward-expr self))
+    (method public (collect-backward-exprs self) <list>)
+    (method public (collect-forward-exprs self n <fx>) <list>)
+    (method virtual (expression-comment? self mark))
+    (method public (remove-expression-comments self list)))
+  (hub backward-expr)
+  (hub forward-expr)
+  (hub collect-backward-exprs)
+  (hub collect-forward-exprs)
+  (hub remove-expression-comments))

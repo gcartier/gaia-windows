@@ -1,0 +1,8 @@
+(module jazz.schema.source.Schema-Source jazz
+  (interface Schema-Source
+    (method public virtual abstract (present self))
+    (method public virtual abstract (present-detailed self))
+    (method public virtual abstract (get-data-schema self . rest)))
+  (hub present)
+  (hub present-detailed)
+  (hub get-data-schema))

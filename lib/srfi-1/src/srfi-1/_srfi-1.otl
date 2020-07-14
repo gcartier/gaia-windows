@@ -1,0 +1,3 @@
+(module srfi-1 scheme:
+  (import (scheme (except member map assoc)))
+  (import (scheme.syntax (phase syntax))))

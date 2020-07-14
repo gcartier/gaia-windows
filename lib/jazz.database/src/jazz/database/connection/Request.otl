@@ -1,0 +1,15 @@
+(module jazz.database.connection.Request jazz
+  (import (jazz.database))
+  (import (jazz.schema))
+  (class Request extends Object
+    (slot connection)
+    (method override (initialize self con))
+    (method virtual (new-recordset self request . rest))
+    (method public (load-request self request (table: table (unspecified)) (name: name (unspecified)) (max-load: max-load (unspecified)) (data-class: data-class (unspecified))))
+    (method public (load-multirequest self request (max-load: max-load (unspecified)) (data-classes: data-classes (unspecified))))
+    (method public (load-rows self request table (max-load: max-load (unspecified))))
+    (method public virtual (execute self command)))
+  (hub load-request)
+  (hub load-multirequest)
+  (hub load-rows)
+  (hub execute))

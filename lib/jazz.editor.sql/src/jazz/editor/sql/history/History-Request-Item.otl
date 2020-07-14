@@ -1,0 +1,11 @@
+(module jazz.editor.sql.history.History-Request-Item jazz
+  (import (jazz.console))
+  (import (jazz.editor.sql))
+  (import (jazz.editor.sql.view))
+  (import (jazz.history))
+  (import (jazz.text))
+  (class History-Request-Item extends History-Item
+    (slot request)
+    (method override (initialize self request))
+    (method override (open-item self))
+    (method override (present self))))

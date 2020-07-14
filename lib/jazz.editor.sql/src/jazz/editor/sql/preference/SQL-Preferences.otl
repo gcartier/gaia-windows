@@ -1,0 +1,18 @@
+(module jazz.editor.sql.preference.SQL-Preferences jazz
+  (import (jazz.markup))
+  (import (jazz.preferences))
+  (import (jazz.resource))
+  (class SQL-Preferences extends Preferences
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (property max-load accessors generate)
+    (property max-display accessors generate)
+    (property tabulate-text? accessors generate))
+  (hub get-max-load)
+  (hub set-max-load)
+  (hub get-max-display)
+  (hub set-max-display)
+  (hub get-tabulate-text?)
+  (hub set-tabulate-text?))

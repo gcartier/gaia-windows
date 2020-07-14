@@ -1,0 +1,20 @@
+(package jam
+  
+  (title "Jam")
+  (description "Jazz package manager")
+  (authors "Guillaume Cartier")
+  (stage experimental)
+  (root "src")
+  (products (jam (run jam.run)
+                 (update jam
+                         jam.help
+                         jam.list
+                         jam.run
+                         jam.search
+                         jam.info
+                         jam.dependencies
+                         jam.references)
+                 (dependencies scheme.core
+                               jazz
+                               jazz.runtime)))
+  (project ".project"))

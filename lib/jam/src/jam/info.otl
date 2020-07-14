@@ -1,0 +1,4 @@
+(module jam.info jazz
+  (import (jam))
+  (import (jazz.runtime))
+  (definition package (jam-info arguments)))

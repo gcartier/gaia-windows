@@ -1,0 +1,10 @@
+(module jazz.editor.sql.view jazz
+  (import (jazz.editor.sql))
+  (import (jazz.view))
+  (definition public (get-sql-console))
+  (definition public (get-sql-console-text))
+  (definition public (get-sql-tree-output))
+  (definition public (get-sql-output-tree))
+  (definition public (get-sql-text-output))
+  (definition public (get-sql-output-text))
+  (definition public (get-sql-connections)))

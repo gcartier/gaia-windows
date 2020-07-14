@@ -1,0 +1,12 @@
+(package jazz.calendar
+  
+  (title "Calendar")
+  (description "Calendar widget")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.calendar (alias calendar)
+                           (update jazz.calendar)
+                           (dependencies jazz
+                                         jazz.time)))
+  (project ".project"))

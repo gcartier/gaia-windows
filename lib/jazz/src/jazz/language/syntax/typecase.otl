@@ -1,0 +1,3 @@
+(module jazz.language.syntax.typecase scheme
+  (import (jazz.language.runtime.kernel))
+  (syntax public typecase))

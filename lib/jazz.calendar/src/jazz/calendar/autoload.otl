@@ -1,0 +1,10 @@
+(module jazz.calendar.autoload jazz
+  (export (jazz.calendar.Calendar-Actions (autoload Calendar-Actions Calendar-Actions)))
+  (export (jazz.calendar.Calendar-Day (autoload Calendar-Day Calendar-Day)))
+  (export (jazz.calendar.Calendar-Dialog (autoload Calendar-Dialog Calendar-Dialog)))
+  (export (jazz.calendar.Calendar-Navigator (autoload Calendar-Navigator Calendar-Navigator)))
+  (export (jazz.calendar.Calendar-View (autoload Calendar-View Calendar-View)))
+  (export (jazz.calendar.Date-Domain (autoload Date-Domain Date-Domain)))
+  (export (jazz.calendar.Date-Entry (autoload Date-Entry Date-Entry)))
+  (export (jazz.calendar.Date-Row (autoload Date-Row Date-Row)))
+  (export (jazz.calendar.Periods-Chooser (autoload Periods-Chooser Periods-Chooser))))
