@@ -12,6 +12,7 @@
   (import (jazz.settings))
   (import (jazz.view))
   (import (jazz.window))
+  (import (jazz.time))
   (class Shader extends Object
     (slot type <int> accessors generate)
     (slot code accessors generate)
